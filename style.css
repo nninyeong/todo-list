@@ -21,7 +21,7 @@ body {
     align-items: center;
 
     height: 60%;
-    width: 35%;
+    width: 30%;
 }
 
 .title {
@@ -65,10 +65,32 @@ ul.list {
 }
 
 li.task {
-    height: 1.5rem;
+    height: 2rem;
     margin-top: 0.5rem;
+    
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid black;
 }
 
 li.task > input {
     margin-right: 0.5rem;
+}
+
+input:checked + label {
+    color: lightgray;
+    text-decoration: line-through;
+}
+
+.taskDeleteButton {
+    background: url("asset/can.png") no-repeat center;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: auto;
+    border: none;
+}
+
+button {
+    cursor: pointer;
 }
