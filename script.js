@@ -15,7 +15,10 @@ function addTask() {
     newLi.className = "task";
     newLi.innerHTML = `
         <input type="checkbox" name="task" id="task${taskList.children.length + 1}">
-        <label for="task${taskList.children.length + 1}">${newTask}</label>
+        <label for="task${taskList.children.length + 1}">
+        <span class="checkboxIcon"></span>
+        <span class="taskContent">${newTask}</span>
+        </label>
     `;
 
     let deleteButton = document.createElement('button');
